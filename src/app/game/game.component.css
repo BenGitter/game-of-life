@@ -1,0 +1,75 @@
+/*
+  RED: #FFBCBC
+  BLUE: #9EDEDE
+  GREEN: #9EDE9E
+*/
+
+body{
+  background: #eee;
+}
+
+table, td{
+  border: 1px solid #eee;
+  border-collapse: collapse;
+}
+
+table{
+  margin: auto;
+}
+
+table{
+  width: 852px;
+}
+
+td.block{
+  height: 15px;
+  font-size: 8px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn-wrapper{
+  margin: 30px auto;
+  width: 400px;
+}
+
+.btn-wrapper button{
+  border: none;
+  outline: none;
+  padding: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;  
+}
+
+.btn-wrapper button:nth-child(1){
+  width: 100px;
+  background: #65CB65;
+}
+.btn-wrapper button:nth-child(2){
+  width: 120px;
+  background: #FF7070;
+}
+.btn-wrapper button:nth-child(3){
+  color: white;
+  background: #65CBCB;
+  padding: 4px;
+  width: 150px;
+  font-weight: bold;
+  cursor: default;
+}
+
+
+/* cell colors: */
+.alive{
+  background: #9EDEDE;
+}
+
+.dead{
+  background: #FFBCBC;
+}
+
+.new{
+  background: #9EDE9E;
+}

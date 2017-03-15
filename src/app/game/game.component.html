@@ -1,0 +1,22 @@
+<table>
+  <tr *ngFor="let row of numRowsArr; let i = index">
+    <td class="block" [ngClass]="{'alive':livingArr[i][j], 'dead':deadArr[i][j], 'new':newArr[i][j]}" *ngFor="let col of numColsArr; let j = index" (click)="makeAlive(i,j)">
+     
+      </td>
+  </tr>
+</table>
+
+<div class="btn-wrapper">
+  <button (click)="switchState()">
+    <span *ngIf="!isRunning">Start</span>
+    <span *ngIf="isRunning">Stop</span>
+  </button>
+
+  <button (click)="clearBoard()">
+    Clear Board
+  </button>
+
+  <button>
+    Generation: {{generationNum}}
+  </button>
+</div>
